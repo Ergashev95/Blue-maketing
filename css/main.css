@@ -1,0 +1,266 @@
+@import url(./fonts.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: 1140px;
+    padding: 0 15px;
+    margin: auto;
+}
+
+.btn {
+    max-width: 219px;
+    width: 100%;
+    background: #3FA5D5;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+    padding: 7px 0;
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+    transition: .5s;
+    display: inline-block;
+}
+
+.btn:hover {
+    background: #2A86B1;
+}
+
+
+body {
+    font-family: "Rubik";
+    background: #E5E5E5;
+}
+
+/* header start  */
+.header {
+    padding: 30px 0;
+}
+
+.header__content {
+    width: 100%;
+    min-height: 500px;
+    background: url('../img/Фон\ \(1\).png') rgba(255, 255, 255, 0.5);
+    border-radius: 14px;
+    padding: 0 62px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 25px;
+}
+
+.header__title {
+    font-size: 50px;
+    font-weight: 700;
+    color: #464748;
+    max-width: 332px;
+    width: 100%;
+}
+
+.header__text {
+    color: #696868;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    max-width: 314px;
+    width: 100%;
+    text-align: justify;
+}
+
+/* header end */
+
+/* skills start */
+.skills {
+    padding-bottom: 50px;
+}
+
+.skills__cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.skills__card {
+    max-width: 255px;
+    width: 100%;
+    background: #fff;
+    padding: 30px 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 65px;
+    border-radius: 15px;
+}
+
+.skills__card-title {
+    color: #2A86B1;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.skills__card-icon {
+    color: #2A86B1;
+}
+
+/* skills end */
+
+/* info start */
+.info {
+    padding-bottom: 44px;
+}
+
+.info__content {
+    display: flex;
+    justify-content: space-between;
+}
+.info__desc-text {
+    max-width: 825px;
+    width: 100%;
+    background: #FFFFFF;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    text-align: justify;
+    color: #545454;
+}
+h3.info__desc-title,
+h3.info__news-title {
+    color: #686868;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0 0 22px 20px;
+}
+.info__news-new {
+    max-width: 255px;
+    width: 100%;
+    background: white;
+    display: block;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+h4.info__news-title {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #323232;
+}
+.info__news-text {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 14.5px;
+    color: #000;
+    margin-top: 5px;
+}
+
+/* info end */
+
+/* footer start */
+.footer {
+    background: #3FA5D5;
+    padding: 40px;
+}
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+}
+.footer__title {
+    color: #fff;
+    font-size: 50px;
+    font-weight: 700;
+}
+.footer__links {
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    row-gap: 15px;
+}
+.footer__phone {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+}
+.footer__email {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+}
+/* footer end */
+
+/* nav start */
+.nav {
+    background: #fff;
+    width: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    /* bottom: 0; */
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px 0;
+    transition: .5s;
+    overflow: hidden;
+}
+.nav:hover {
+    width: 220px;
+}
+.nav__logo {
+    padding-left: 20px;
+}
+.nav__logo-image {
+    object-fit: cover;
+}
+.nav__list {
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 55px;
+}
+.nav__link {
+    display: flex;
+    align-items: center;
+    column-gap: 37px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #939393;
+    transition: .5s;
+    text-align: start;
+    width: max-content;
+
+}
+.nav__link:hover {
+    color: #2A86B1;
+}
+.nav__ava {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 15px;
+}
+/* nav end */
